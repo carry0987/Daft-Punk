@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Daft Manager</title>
+
+    <link rel="stylesheet" href="assets/css/uikit.min.css"/>
+    <link rel="stylesheet" href="assets/css/uikit.css" />
+
+    <link rel="import" href="sections/select.html">
+    <link rel="import" href="sections/preview.html">
+  </head>
+  <body>
+      <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #scrollup-dropdown">
+          <div class="uk-margin uk-position-relative uk-light">
+              <canvas class="uk-background-cover" style="background-image: url('assets/images/daft background.jpg')" width="2000" height="200"></canvas>
+              <div class="uk-position-top">
+                  <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                      <div class="uk-navbar-left">
+                          <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#menu" uk-toggle></a>
+                          <ul class="uk-navbar-nav">
+                              <li><a href="#" data-section="select">Sélection</a></li>
+                              <li><a href="#" data-section="preview">Prévisualisation</a></li>
+                          </ul>
+                      </div>
+                      <div class="uk-navbar-right">
+                          <ul class="uk-navbar-nav">
+                                  <li><a href="#" data-section="animations">Animations</a>
+                                      <div class="uk-navbar-dropdown">
+                                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                                              <li class="uk-active"><a href="#">Active</a></li>
+                                              <li class="uk-parent">
+                                                  <a href="#">Parent</a>
+                                                  <ul class="uk-nav-sub">
+                                                      <li><a href="#">Sub item</a></li>
+                                                      <li><a href="#">Sub item</a></li>
+                                                  </ul>
+                                              </li>
+                                              <li class="uk-nav-header">Header</li>
+                                              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                                              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                                              <li class="uk-nav-divider"></li>
+                                              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li><a href="#" data-section="pad">Pad</a></li>
+                          </ul>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+
+    <main></main>
+
+    <div class="uk-offcanvas-bar" id="content"></div>
+
+    <div id="menu" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li class="uk-parent">
+                    <a href="#">Parent</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#" data-section="home"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Accueil</a></li>
+                <li><a href="#" data-section="youtube"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Youtube</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#" data-section="about"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> A propos</a></li>
+            </ul>
+
+            <h3>Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+    </div>
+
+    <a id="welcome-trigger" href="#welcome" uk-toggle></a>         
+            <div id="welcome" class="uk-modal-full" uk-modal>
+                <div class="uk-modal-dialog">
+                    <button class="uk-modal-close-full" type="button" uk-close></button>
+                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                        <div class="uk-background-cover" style="background-image: url('assets/images/daft background.jpg');" uk-height-viewport></div>
+                        <div class="uk-padding-large">
+                            <h1>Bienvenue!</h1>
+                            <p>
+                            Ce logiciel a pour but de vous aider avec votre gantelet Daft Punk.
+                            Vous pouvez convertir vos musiques, choisir quels effets sonores seront présents.
+                            Vous pourrez aussi personnaliser les animations sur votre casque.
+                            Découvrez toutes les fonctionnalités!
+                            </br>
+                            Pour commencer, cliquez sur "Sélection".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <script src="assets/uikit.min.js"></script>
+    <script src="assets/uikit-icons.min.js"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./assets/import')
+      require('./assets/shortcuts')
+      require('./renderer-process/index')
+    </script>
+  </body>
+</html>

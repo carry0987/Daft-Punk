@@ -1,0 +1,55 @@
+<section>
+  <div class="uk-section uk-section-default" uk-height-viewport="expand: true">
+    <div class="uk-container">
+
+        <h1>Sélection des musiques</h1>
+
+        <p>
+          Dans cette section, choisissez les musiques à importer sur votre gantelet.
+          Une analyse automatique sera effectuée pour vérifier si vos musiques contiennent assez de données.
+          Dans le cas contraire, une requête sur internet sera réalisée.
+        </p>
+
+        <div class="uk-placeholder uk-text-center">
+            <span class="uk-margin-small-right uk-text-muted" uk-icon="icon: upload"></span>
+            <span class="uk-text-middle">Ajoutez des musiques en les déposant ici ou sélectionnez </span>
+            <span class="uk-link" id="select-directory">un dossier</span>
+            <span class="uk-text-middle"> ou </span>
+            <span class="uk-link" id="select-file">une musique</span>
+        </div>
+
+        <div id="select-list"></div>
+        
+    </div>
+  </div>
+
+  <div class="uk-section uk-section-default">
+    <div class="uk-container">
+      <div class="uk-text-center uk-animation-toggle">
+        <button class="uk-button uk-button-primary uk-animation-shake" id='select-analyze' disabled>
+          <span class="uk-margin-small-right" uk-icon="icon: check"></span>
+          Soumettre
+        </button>
+        <div id="select-spinner"></div>
+      </div>
+      <progress id="select-bar-analyze" class="uk-progress" value="0" max="100"></progress>
+      <progress id="select-bar-download" class="uk-progress" value="0" max="100"></progress>
+    </div>
+  </div>
+
+  <div class="uk-section uk-section-secondary uk-section-xsmall">
+    <div class="uk-container">
+      <div class="uk-grid-large uk-flex-middle" uk-grid>
+        <div class="uk-width-expand">
+          <p class="uk-text-large">Besoin de musique?</p>
+        </div>
+        <div class="uk-width-auto">
+          <button class="uk-button uk-button-danger">
+            <span class="uk-margin-small-right" uk-icon="icon: youtube"></span>
+            Télécharger depuis Youtube
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

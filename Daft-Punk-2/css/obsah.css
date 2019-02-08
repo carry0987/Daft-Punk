@@ -1,0 +1,274 @@
+@font-face {
+    font-family: DaftPunkFont;
+    src: url(../fonts/Daft_Font.TTF);
+}
+
+@font-face {
+    font-family: MainFont;
+    src: url(../fonts/AgencyFB.ttf);
+}
+
+@font-face {
+    font-family: SecondFont;
+    src: url(../fonts/Bitter-Regular.otf);
+}
+
+body{
+  font-family: SecondFont;
+  color: #FF8C00;
+  font-size: 13px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: SecondFont, arial, sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ea1821;
+}
+
+h1{
+    color: #333;
+}
+
+p{
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a[target="_blank"] {
+    padding-right: 3%;
+    background-size: 10%;
+    background: transparent url(../images/external.png) no-repeat center right;
+}
+
+a{
+    text-decoration: none;
+    color:#ea1821;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #bad9de;
+}
+
+hr {
+    border: 0;
+    border-top: 3px double #8c8c8c;
+}
+
+/*** Numbered and unnumbered list***/
+ol {
+    counter-reset: li;
+}
+
+.obsah ul li, ol li {
+    position: relative;
+    display: block;
+    padding: 0.3em 0.3em 0.3em 1.5em;
+    margin: 0.5em;
+    margin-bottom: 0.1em;
+    border-radius: 0.2em;
+    transition: all 0.8s ease-out;
+}
+
+.obsah li:hover {
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.obsah ul ul li:hover, ol ol li:hover {
+    box-shadow: none;
+}
+
+.obsah li:hover:before {
+    transform: rotate(360deg);
+}
+
+.obsah ol li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 1.2em;
+    margin-top: -1.3em;
+    background: black;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.8s ease-out;
+}
+
+.obsah ul li:before {
+    content: "\0394";
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 1.2em;
+    margin-top: -1.3em;
+    background: black;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.8s ease-out;
+    font-size: 13px;
+}
+
+/*** Table ***/
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+caption {
+    font-size: 1.5em;
+    margin: 10px 0 10px;
+}
+
+tr {
+    background: #B22222;
+    border: 1px solid #ccc;
+}
+
+td{
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    font-size: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: black;
+    border: 1px solid #ccc;
+}
+
+caption {
+    display: table-caption;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/*** Form ***/
+form{
+    background-color: black;
+    padding: 1%;
+    margin: auto;
+    width: 98%;
+    border-radius: 5px;
+    float: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select, textarea {
+    width:100%;
+    border-radius: 5px;
+    font: 90% SecondFont, arial, sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #999999;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus, textarea:focus {
+    box-shadow: 0 0 5px #e0edef;
+    padding: 10px;
+    border: 1px solid #e0edef;
+}
+
+input[type="submit"]{
+    width:100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 15px;
+    background-color: #FF8C00;;
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    font: bold 90% SecondFont, arial, sans-serif ;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+input[type="submit"]:hover{
+    background-color: #ea1821;
+}
+
+label{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+/*** Responsive table***/
+@media screen and (max-width: 768px) {
+    table {
+        border: none;
+    }
+
+    caption {
+        font-size: 100%;
+    }
+
+    th {
+        border: none;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    td {
+        display: block;
+        font-size: 100%;
+        text-align: right;
+    }
+
+    td:before {
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    form{
+        width:100%;
+    }
+
+}

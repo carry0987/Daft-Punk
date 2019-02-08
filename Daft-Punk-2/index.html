@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/vychozi.css">
+    <link rel="stylesheet" type="text/css" href="css/animace.css">
+    <link rel="stylesheet" type="text/css" href="css/rozlozeni.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Daft Punk</title>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "mainnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "mainnav";
+        }
+    }
+    $("figure").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
+</script>
+  </head>
+  <body>
+    <div class="navigation">
+
+        <ul class="mainnav" id="myTopnav">
+          <li class="logo"><a class="logo" href="#home">Daft Punk</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="media.html">MEDIA</a></li>
+          <li><a href="#tour">TOUR</a></li>
+          <li><a href="#eshop">E-SHOP</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
+    </div>
+    <div id="banner">
+      <img class="banner" src="images/banner.jpg" alt="DP">
+      <div class="bottom-right">
+        <div id=container>
+            New
+            <div id=flip>
+              <div><div>Awesome</div></div>
+              <div><div>shocking</div></div>
+              <div><div>majestic</div></div>
+            </div>
+            Album
+        </div>
+      </div>
+    </div>
+
+    <div id="music-content">
+
+      <div class="song1">
+        <figure class="snip1104 red">
+          <img src="images/logo_alba1.jpg" alt="song1">
+          <figcaption>
+            <h2>GET  <span> LUCKY</span></h2>
+          </figcaption>
+        </figure>
+        <div class="imgButton">
+          <button class="button button1" type="button" name="button">Itunes</button>
+          <button class="button button2" type="button" name="button">Spotify</button>
+        </div>
+      </div>
+
+
+      <div class="song2">
+          <figure class="snip1104 yellow">
+        <img src="images/logo_alba2.jpg" alt="song2">
+        <figcaption>
+          <h2>RANDOM  <span> MEMORIES</span></h2>
+        </figcaption>
+          </figure>
+        <div class="imgButton">
+          <button class="button button1" type="button" name="button">Itunes</button>
+          <button class="button button2" type="button" name="button">Spotify</button>
+        </div>
+
+      </div>
+      <div class="song3">
+        <figure class="snip1104 blue">
+        <img src="images/logo_alba3.png" alt="song2">
+        <figcaption>
+          <h2>MUSIQUIE  <span> VOL.I</span></h2>
+        </figcaption>
+        </figure>
+        <div class="imgButton">
+          <button class="button button1" type="button" name="button">Itunes</button>
+          <button class="button button2" type="button" name="button">Spotify</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="tour">
+      <div class="banner-tour">
+        <img class="logo_tour" src="images/logo_tour.jpg" alt="tour">
+        <div class="bottom-center">
+          <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+              <text text-anchor="middle" x="50%" y="80%">Tickets Sold out</text>
+            </symbol>
+            <g class = "g-ants">
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          		<use xlink:href="#s-text" class="text-copy"></use>
+          	</g>
+          </svg>
+        </div>
+      </div>
+      <div class="table-tour">
+        <table>
+          <tr>
+            <td>29 NOV</td>
+            <td>BERLIN, GERMANY</td>
+            <td>OLYMPIA STADION</td>
+            <td><a href="#">GET TICKTES</a></td>
+          </tr>
+          <tr>
+            <td>11 DEC</td>
+            <td>AMSTERDAM, NETHERLANDS</td>
+            <td>AMSTERDAM ARENA</td>
+            <td><a href="#">GET TICKTES</a></td>
+          </tr>
+          <tr>
+            <td>18 DEC</td>
+            <td>PRAGUE, CZECH REPUBLIC</td>
+            <td>02 ARENA</td>
+            <td><a href="#">GET TICKTES</a></td>
+          </tr>
+          <tr>
+            <td>03 JAN</td>
+            <td>MELBOURNE, AUSTRALIA</td>
+            <td>ROD LAVER ARENA</td>
+            <td><a href="#">GET TICKTES</a></td>
+          </tr>
+          <tr>
+            <td>18 FEB</td>
+            <td>TOKYO, JAPAN</td>
+            <td>TOKYO DOME</td>
+            <td><a href="#">GET TICKTES</a></td>
+          </tr>
+        </table>
+        <div class="tour-button">
+          <button class="button button3" type="button" name="button">MORE TOUR DATES</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="social">
+        <a href="#"><img src="images/twit.png" alt="twitter"></a>
+        <a href="#"><img src="images/fb2.png" alt="facebook"></a>
+        <a href="#"><img src="images/inst.png" alt="instagram"></a>
+      </div>
+        CREATED BY <a href="https://is.mendelu.cz/auth/lide/clovek.pl?id=59915;lang=cz">ALISHER TURGANALIYEV</a>
+    </footer>
+  </body>
+</html>

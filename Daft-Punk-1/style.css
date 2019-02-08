@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&subset=cyrillic,cyrillic-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(img/fone.png) 0 0 repeat;
+    color: #242424;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*--------------------------headerTop----------------------*/
+
+.headerTop {
+    height: 80px;
+}
+
+
+.headerTop .social {
+    float: left;
+    margin-top: 32px;
+}
+
+.headerTop .social a {
+    transition: 0.3s;
+    color: #242424;
+}
+
+.headerTop .social a:nth-child(1) {
+    margin-left: 134px;
+}
+
+.headerTop .social a:nth-child(2) {
+    margin: 0 21px 0 25px;
+    padding: 0 1px 0 5px;
+}
+
+.headerTop .social a:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.headerTop .logo {
+    margin: 16px 0 0 470px;
+}
+
+.headerTop .menu {
+    float: right;
+    margin-right: 133px;
+    margin-top: 30px;
+    transition: 0.7s;
+}
+
+.headerTop .menu .fa {
+    font-size: 26px;
+}
+
+.headerTop .menu:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+/*-----------------------slider--------------------------*/
+
+.slider {
+    width: 1440px;
+    height: 820px;
+    background: url("img/cover.png"),
+    url("img/daftPunk.png");
+}
+
+.slider .sliderText {
+    margin-top: 261px;
+    margin-left: 276px;
+}
+
+@keyframes shake {
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.slider .scroll {
+    margin-bottom: -231px;
+    margin-left: -462px;
+    transition: 0.3s;
+    animation: shake 0.6s ease-in alternate infinite;
+}
+
+/*-----------------------media--------------------------*/
+
+.media .sizeMedia {
+    width: 720px;
+    height: 480px;
+    box-sizing: border-box;
+    float: left;
+    background: rgba(233, 232, 232, 0.61);
+}
+
+.media .featured {
+    padding: 125px 127px 0 132px;
+}
+
+.media .featured h2 {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.media .featured p {
+    color: #656565;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 24px 0 53px 0;
+}
+
+.media .featured p a {
+    color: #8b87ff;
+}
+
+.media .featured .app a:first-child {
+    margin-right: 10px;
+}
+
+.media .album {
+    background: url("img/coverMan.png"),
+    url("img/man.png");
+    position: relative;
+}
+
+.media .album .disc {
+    position: absolute;
+    top: 105px;
+    left: 274px;
+}
+
+.media .album .theBeat {
+    position: absolute;
+    top: 105px;
+    left: 175px;
+
+}
+
+.media .video {
+    background: #000000;
+}
+
+.media .video .videoplayer {
+    width: 720px;
+    height: 480px;
+}
+
+.media .musicVideo {
+    padding: 125px 127px 0 111px;
+}
+
+.media .musicVideo a {
+    color: #8b87ff;
+}
+
+.media .musicVideo h2 {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.media .musicVideo p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #656565;
+    margin: 24px 0 41px 0;
+}
+
+.media .musicVideo h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #878787;
+    margin-bottom: 5px;
+}
+
+.media .musicVideo a span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    border-right: 2px solid #c0c0c0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.media .musicVideo a:nth-child(4) span {
+    padding-left: 0;
+    padding-right: 13px;
+}
+
+.media .musicVideo a:nth-child(5) span {
+    padding-right: 14px;
+}
+
+.media .musicVideo a:nth-child(6) span {
+    border: none;
+}
+
+.media .musicVideo > a {
+    color: #878787;
+    transition: 0.2s;
+}
+
+.media .musicVideo > a:hover {
+    color: #b2b2b2;
+    transition: 0.2s;
+}
+
+/*-----------------------Event-----------------------*/
+
+.event {
+    height: 321px;
+    box-sizing: border-box;
+    clear: both;
+    padding: 124px 136px 0 132px;
+}
+
+.event .location {
+    display: inline-block;
+}
+
+.event .location h2 {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.event .location p {
+    color: rgb(149, 149, 149);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.event .time {
+    display: inline-block;
+    margin-left: 140px;
+}
+
+.event .time .number {
+    display: inline-block;
+    margin-right: 141px;
+}
+
+.event .time .number:last-child {
+    margin-right: 0;
+}
+
+.event .time .number h2 {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.event .time .number p {
+    color: rgb(149, 149, 149);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*----------------------Photo-----------------------*/
+
+.photo {
+    padding: 4px 0 0 4px;
+    position: relative;
+}
+
+.photo .instaPhoto {
+    width: 240px;
+    height: 240px;
+    margin-left: -4px;
+    margin-top: -4px;
+    transition: 0.2s;
+}
+
+.photo .instaPhoto:hover {
+    cursor: pointer;
+    transform: scale(1.04, 1.04);
+    transition: 0.2s;
+}
+
+.photo .instagram {
+    position: absolute;
+    top: 150px;
+    left: 535px;
+    background: linear-gradient(90deg, #3359ac 0%, #1ba3d9 100%);
+    width: 370px;
+    height: 180px;
+    border-radius: 30px;
+}
+
+.photo .instagram img {
+    margin: 32px 0 13px 165px;
+}
+
+.photo .instagram a p {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.photo .instagram a p:hover {
+    opacity: 0.7;
+}
+
+.photo a .arrowUp {
+    position: absolute;
+    bottom: -21px;
+    right: 30px;
+    border-radius: 50%;
+    background: #ffffff url("img/arrowUp.png") no-repeat 18px 20px;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.15);
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+.photo a .arrowUp:hover {
+    bottom: -19px;
+    transition: 0.2s;
+}
+
+/*---------------------News---------------------------*/
+
+.news {
+    padding: 0 311px;
+    margin-top: 20px;
+    height: 225px;
+
+}
+
+.news form h3 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.news form p {
+    font-size: 23px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news form input {
+    border: none;
+    border-bottom: 2px solid #c0c0c0;
+    background: inherit;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    width: 250px;
+    margin-right: 30px;
+    padding: 7px 0;
+    color: rgb(117, 117, 117);
+}
+
+.news form input:nth-child(5) {
+    margin-right: 0;
+}
+
+.news form input:nth-child(6) {
+    display: block;
+    margin: 25px auto;
+    width: 80px;
+    height: 35px;
+    padding: 0;
+    border-radius: 19px;
+    font-size: 15px;
+    box-shadow: 0 1px 5px #c0c0c0;
+}
+
+.news form input:nth-child(6):hover {
+    box-shadow: 0 2px 9px #c0c0c0;
+    cursor: pointer;
+}
+
+.news form input:invalid {
+    border-color: rgba(255, 0, 0, 0.58);
+}
+
+.news form input:focus {
+    border-color: #818181;
+}
+
+.news form input:nth-child(6):focus {
+    border-color: #c0c0c0;
+}
+
+/*-------------------------Footer--------------------------*/
+
+.footer {
+    height: 25px;
+}
+
+.footer .address {
+    display: inline-block;
+    color: #757575;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.footer .socialFooter {
+    display: inline-block;
+    margin-left: 1061px;
+}
+
+.footer .socialFooter a {
+    transition: 0.3s;
+    margin-right: 50px;
+    color: #707070;
+}
+
+.footer .socialFooter a:nth-child(3) {
+    margin-right: 0;
+}
+
+.footer .socialFooter a:hover {
+    color: #202020;
+    transition: 0.3s;
+}
+
+/*-------------------------------@Media----------------------------*/
+
+@media all and (max-width: 1491px) {
+    .wrapper {
+        width: 1200px;
+    }
+
+    .headerTop .logo {
+        margin: 16px 0 0 380px;
+    }
+
+    .slider {
+        width: 100%;
+        background: url(img/cover.png), url(img/daftPunk.png) -87px 0;
+    }
+
+    .slider .sliderText {
+        margin-top: 309px;
+        margin-left: 244px;
+        width: 750px;
+    }
+
+    .slider .scroll {
+        margin-left: -411px;
+    }
+
+    .media .sizeMedia {
+        width: 600px;
+    }
+
+    .media .featured {
+        padding: 125px 99px 0 90px;
+    }
+
+    .media .album .disc {
+        left: 230px;
+    }
+
+    .media .album .theBeat {
+        left: 126px;
+    }
+
+    .media .video .videoplayer {
+        width: 600px;
+        height: 480px;
+    }
+
+    .media .musicVideo {
+        padding: 125px 24px 0 75px;
+    }
+
+    .event {
+        padding: 124px 65px 0 60px;
+    }
+
+    .event .time {
+        display: inline-block;
+        margin-left: 86px;
+    }
+
+    .photo .instaPhoto {
+        width: 200px;
+        height: 210px;
+    }
+
+    .photo .instagram {
+        position: absolute;
+        top: 121px;
+        left: 450px;
+        width: 300px;
+    }
+
+    .photo .instagram img {
+        display: block;
+        margin: 32px auto 17px;
+    }
+
+    .news {
+        padding: 0 191px;
+    }
+
+    .footer .socialFooter {
+        margin-left: 821px;
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .wrapper {
+        width: 900px;
+    }
+
+    .headerTop .social a:nth-child(1) {
+        margin-left: 80px;
+    }
+
+    .headerTop .menu {
+        margin-right: 90px;
+    }
+
+    .headerTop .logo {
+        margin: 16px 0 0 274px;
+    }
+
+    .slider {
+        background: url(img/cover.png), url(img/daftPunk.png) -24px 0;
+        background-size: 968px;
+        height: 550px;
+    }
+
+    .slider .sliderText {
+        margin-top: 180px;
+        margin-left: 172px;
+        width: 550px;
+    }
+
+    .slider .scroll {
+        margin-left: -290px;
+        margin-bottom: -154px;
+    }
+
+    .media .sizeMedia {
+        width: 450px;
+        height: 370px;
+    }
+
+    .media .featured {
+        padding: 65px 63px 0 57px;
+    }
+
+    .media .featured h2 {
+        font-size: 38px;
+    }
+
+    .media .featured p {
+        font-size: 16px;
+    }
+
+    .media .album .disc {
+        left: 148px;
+        top: 50px;
+    }
+
+    .media .album .theBeat {
+        left: 45px;
+        top: 50px;
+    }
+
+    .media .video .videoplayer {
+        width: 450px;
+        height: 370px;
+    }
+
+    .media .musicVideo h2 {
+        font-size: 38px;
+    }
+
+    .media .musicVideo p {
+        font-size: 16px;
+    }
+
+    .media .musicVideo {
+        padding: 74px 24px 0 46px;
+    }
+
+    .event {
+        padding: 80px 40px 0 40px;
+        height: 240px;
+    }
+
+    .event .location h2 {
+        font-size: 40px;
+    }
+
+    .event .location p {
+        font-size: 15px;
+    }
+
+    .event .time .number h2 {
+        font-size: 40px;
+    }
+
+    .event .time .number {
+        margin-right: 80px;
+    }
+
+    .event .time {
+        margin-left: 47px;
+    }
+
+    .photo .instaPhoto {
+        width: 150px;
+        height: 145px;
+    }
+
+    .photo .instagram {
+        top: 77px;
+        left: 358px;
+        width: 180px;
+        height: 130px;
+    }
+
+    .photo .instagram a p {
+        font-size: 28px;
+    }
+
+    .photo .instagram img {
+        margin: 25px auto 17px;
+        width: 35px;
+    }
+
+    .news {
+        padding: 0 41px;
+    }
+
+    .footer .socialFooter {
+        margin-left: 521px;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .wrapper {
+        width: 600px;
+    }
+
+    .headerTop .social a:nth-child(1) {
+        margin-left: 25px;
+    }
+
+    .headerTop .logo {
+        margin: 16px 0 0 190px;
+    }
+
+    .headerTop .menu {
+        margin-right: 25px;
+    }
+
+    .slider {
+        background: url(img/cover.png), url(img/daftPunk.png) -82px 0;
+        background-size: 820px;
+        height: 465px;
+    }
+
+    .slider .sliderText {
+        margin-top: 140px;
+        margin-left: 60px;
+        width: 500px;
+    }
+
+    .slider .scroll {
+        margin-left: -269px;
+        margin-bottom: -133px;
+    }
+
+    .media .sizeMedia {
+        width: 600px;
+        height: 342px;
+    }
+
+    .media .featured {
+        padding: 74px 73px 0 69px;
+    }
+
+    .media .album .disc {
+        left: 230px;
+        top: 40px;
+    }
+
+    .media .album .theBeat {
+        left: 130px;
+        top: 40px;
+    }
+
+    .media .video .videoplayer {
+        width: 600px;
+        height: 342px;
+    }
+
+    .media .video {
+        position: relative;
+        bottom: -342px;
+    }
+
+    .media .musicVideo {
+        position: relative;
+        top: -342px;
+        padding: 63px 71px 0 115px;
+    }
+
+    .event {
+        padding: 35px 40px 0 35px;
+        height: 240px;
+    }
+
+    .event .location {
+        display: block;
+        margin: 0 auto;
+        width: 298px;
+    }
+
+    .event .location h2 {
+        text-align: center;
+    }
+
+    .event .location p {
+        margin-top: 15px;
+    }
+
+    .event .time {
+        margin-left: 38px;
+        margin-top: 40px;
+    }
+
+    .event .time .number h2 {
+        margin-bottom: 15px;
+    }
+
+    .photo .instagram {
+        top: 167px;
+        left: 230px;
+        width: 140px;
+        height: 100px;
+    }
+
+    .photo .instagram img {
+        margin: 16px auto 6px;
+        width: 30px;
+    }
+
+    .photo .instagram a p {
+        font-size: 26px;
+    }
+
+    .news {
+        padding: 0 30px;
+        height: 100%;
+    }
+
+    .news form p {
+        margin-bottom: 20px;
+    }
+
+    .news form input {
+        margin-right: 36px;
+    }
+
+    .news form input:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .news form input:nth-child(5) {
+        margin-left: 145px;
+        margin-top: 20px;
+    }
+
+    .news form input:nth-child(6) {
+        margin: 25px auto 40px;
+    }
+
+    .footer .socialFooter {
+        margin-left: 221px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .wrapper {
+        width: 440px;
+    }
+
+    .headerTop .social a:nth-child(1) {
+        margin-left: 40px;
+    }
+
+    .headerTop .logo {
+        margin: 16px 0 0 93px;
+    }
+
+    .headerTop .menu {
+        margin-right: 56px;
+    }
+
+    .slider {
+        background: url(img/cover.png), url(img/daftPunk.png) -82px 0;
+        background-size: 640px;
+        height: 363px;
+    }
+
+    .slider .sliderText {
+        margin-top: 120px;
+        margin-left: 53px;
+        width: 350px;
+    }
+
+    .slider .scroll {
+        margin-left: -189px;
+        margin-bottom: -100px;
+    }
+
+    .media .sizeMedia {
+        width: 100%;
+        height: 300px;
+    }
+
+    .media .featured {
+        padding: 45px 59px 0 60px;
+    }
+
+    .media .featured p {
+        margin: 24px 0 40px 0;
+    }
+
+    .media .album .disc {
+        left: 154px;
+        top: 30px;
+        width: 240px;
+    }
+
+    .media .album .theBeat {
+        left: 64px;
+        top: 30px;
+        width: 240px;
+    }
+
+    .media .musicVideo {
+        padding: 40px 38px 0 32px;
+        top: -300px;
+    }
+
+    .media .video {
+        bottom: -300px;
+    }
+
+    .media .video .videoplayer {
+        width: 440px;
+        height: 300px;
+    }
+
+    .event {
+        padding: 35px 10px 0 10px;
+        height: 240px;
+    }
+
+    .event .time .number {
+        margin-right: 45px;
+    }
+
+    .photo {
+        padding: 4px 0 0 6px;
+    }
+
+    .photo .instaPhoto {
+        width: 146px;
+        height: 130px;
+    }
+
+    .photo .instagram {
+        top: 207px;
+        left: 150px;
+        height: 97px;
+    }
+
+    .news form input {
+        border-color: rgba(255, 0, 0, 0.58);
+        margin-left: 65px;
+        margin-bottom: 20px;
+    }
+
+    .news form input:nth-child(5) {
+         margin-left: 65px;
+        margin-top: 0;
+    }
+
+    .news form input:nth-child(6) {
+        border-bottom: 2px solid #c0c0c0;
+    }
+
+    .footer .socialFooter a {
+        margin-right: 30px;
+    }
+
+    .footer .socialFooter {
+        margin-left: 101px;
+    }
+
+}

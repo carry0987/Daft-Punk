@@ -1,0 +1,165 @@
+<section>
+  <div class="uk-section uk-section-default">
+    <div class="uk-container">
+      <h1>Prévisualisation des musiques</h1>
+        <div>
+            <ul class="uk-tab" uk-switcher="animation: uk-animation-fade">
+                <li><a href="#">Aperçu</a></li>
+                <li><a href="#">Liste complète</a></li>
+                <li><a href="#">Exporter</a></li>
+            </ul>
+            <ul class="uk-switcher uk-margin">
+                <li>
+                  
+                    <div>
+                        <div class="js-slideshow-animation" uk-slideshow="ratio: 5:2; autoplay: true; autoplay-interval: 3000">
+                            <div class="uk-position-relative uk-visible-toggle uk-light">
+                                <ul class="uk-slideshow-items" id="preview-slideshow">
+                                    <li>
+                                        <img src="assets/images/album-slideshow.jpg" alt="" uk-cover>
+                                        <div class="uk-position-center uk-position-small uk-text-center">
+                                            <h2 uk-slideshow-parallax="x: 100,-100"><a>Album</a></h2>
+                                            <p uk-slideshow-parallax="x: 200,-200">Artiste</p>
+                                        </div>
+                                    </li>
+                                </ul>
+    
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+                            </div>
+    
+                            <ul class="uk-dotnav uk-flex-center uk-margin" id="preview-slideshow-item">
+                                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-3@m">
+                            <div class="uk-card uk-card-default" id="preview-album">
+                                <div class="uk-card-media-top uk-text-center">
+                                    <img src="assets/images/album-slideshow.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Album</h3>
+                                    <p>Artiste</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-width-expand@m">
+                            <ul class="uk-list uk-list-striped" id="preview-tracks">
+                                <li>Musique 1</li>
+                                <li>Musique 2</li>
+                                <li>Musique 3</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="uk-divider-icon">
+
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-3@m">
+                            <div class="uk-card uk-card-default" id="preview-artist">
+                                <div class="uk-card-media-top uk-text-center">
+                                    <img src="assets/images/artist.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Artiste</h3>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <ul class="uk-list uk-list-striped">
+                                <li><b>Genres</b>
+                                    <ul>
+                                        <li id="preview-tags">genre 1 - genre 2 - ...</li>
+                                    </ul>
+                                </li>
+                                <li><b>Artistes similaires</b>
+                                    <ul>
+                                        <li id="preview-similar">artiste 1 - artiste 2 - ...</li>
+                                    </ul>
+                                </li>
+                                <li><b>Biographie</b>
+                                    <ul id="preview-summary">
+                                      <li>Biographie de l'artiste</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                <li>
+
+                    <div class="uk-child-width-1-2" uk-grid>
+                        <div>
+                          <div class="uk-card uk-card-default uk-card-hover">
+                            <div class="uk-card-badge"><span class="uk-badge" id="preview-missingData-nb">0</span></div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title"><span class="uk-label uk-label-warning">Musiques sans données</span></h3>
+                                <p id="preview-missingData">
+                                    Ces musiques ne présentent pas assez de données.
+                                    Veuillez en ajouter.
+                                </p>
+                                <p uk-margin>
+                                    <a class="uk-button uk-button-default" href="#">Ajouter des données</a>
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover">
+                                <div class="uk-card-badge"><span class="uk-badge" id="preview-error-nb">0</span></div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title"><span class="uk-label uk-label-danger">Musiques erronées</span></h3>
+                                    <p id="preview-error">
+                                        Ces musiques présentent des problèmes et sont corrompues.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="uk-divider-icon">
+ 
+                    <ul class="uk-list uk-list-divider" id="preview-list">
+                        <li>Artiste 1</li>
+                        <li>Artiste 2
+                            <ul>
+                                <li>List item 1</li>
+                                <li>Album 1
+                                    <ul>
+                                        <li>Musique 1</li>
+                                        <li>Musique 2</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>...</li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <p>
+                        Dans cette partie vous pourrez choisir où exporter vos musiques.
+                        Elles seront renommées et automatiquement placées dans des dossiers suivant le format Arduino.
+                    </p>
+                    <div class="uk-text-center uk-animation-toggle">
+                        <button class="uk-button uk-button-primary uk-animation-shake" id='preview-save' disabled>
+                            <span class="uk-margin-small-right" uk-icon="icon: push"></span>
+                            Exporter
+                        </button>
+                    </div>
+                    </br>
+                    <div class="uk-alert uk-text-center" id="preview-save-folder"></div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+  </div>
+</section>
