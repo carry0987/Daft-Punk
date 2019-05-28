@@ -3,7 +3,7 @@ var min = document.getElementById('minutes');
 var hr = document.getElementById('hours');
 var day = document.getElementById('day');
 
-var play = function (elem) {
+var play = function(elem) {
     var time = elem.innerHTML;
     time = +time - 1;
     console.log(time);
@@ -15,11 +15,9 @@ var play = function (elem) {
     }
 };
 
-window.onload = function () {
+window.onload = function() {
     setInterval(play, 1000, sec);
     setInterval(play, 60000, min);
     setInterval(play, 3600000, hr);
     setInterval(play, 86400000, day);
 };
-
-// Доделать часы

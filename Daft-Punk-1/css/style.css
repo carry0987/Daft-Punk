@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url(img/fone.png) 0 0 repeat;
+    background: url(../img/fone.png) 0 0 repeat;
     color: #242424;
 }
 
@@ -77,8 +77,8 @@ a {
 .slider {
     width: 1440px;
     height: 820px;
-    background: url("img/cover.png"),
-    url("img/daftPunk.png");
+    background: url("../img/cover.png"),
+        url("../img/daftPunk.png");
 }
 
 .slider .sliderText {
@@ -136,8 +136,8 @@ a {
 }
 
 .media .album {
-    background: url("img/coverMan.png"),
-    url("img/man.png");
+    background: url("../img/coverMan.png"),
+        url("../img/man.png");
     position: relative;
 }
 
@@ -215,12 +215,12 @@ a {
     border: none;
 }
 
-.media .musicVideo > a {
+.media .musicVideo>a {
     color: #878787;
     transition: 0.2s;
 }
 
-.media .musicVideo > a:hover {
+.media .musicVideo>a:hover {
     color: #b2b2b2;
     transition: 0.2s;
 }
@@ -331,7 +331,7 @@ a {
     bottom: -21px;
     right: 30px;
     border-radius: 50%;
-    background: #ffffff url("img/arrowUp.png") no-repeat 18px 20px;
+    background: #ffffff url("../img/arrowUp.png") no-repeat 18px 20px;
     box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.15);
     width: 50px;
     height: 50px;
@@ -458,7 +458,7 @@ a {
 
     .slider {
         width: 100%;
-        background: url(img/cover.png), url(img/daftPunk.png) -87px 0;
+        background: url(../img/cover.png), url(../img/daftPunk.png) -87px 0;
     }
 
     .slider .sliderText {
@@ -549,7 +549,7 @@ a {
     }
 
     .slider {
-        background: url(img/cover.png), url(img/daftPunk.png) -24px 0;
+        background: url(../img/cover.png), url(../img/daftPunk.png) -24px 0;
         background-size: 968px;
         height: 550px;
     }
@@ -682,7 +682,7 @@ a {
     }
 
     .slider {
-        background: url(img/cover.png), url(img/daftPunk.png) -82px 0;
+        background: url(../img/cover.png), url(../img/daftPunk.png) -82px 0;
         background-size: 820px;
         height: 465px;
     }
@@ -826,7 +826,7 @@ a {
     }
 
     .slider {
-        background: url(img/cover.png), url(img/daftPunk.png) -82px 0;
+        background: url(../img/cover.png), url(../img/daftPunk.png) -82px 0;
         background-size: 640px;
         height: 363px;
     }
@@ -912,7 +912,7 @@ a {
     }
 
     .news form input:nth-child(5) {
-         margin-left: 65px;
+        margin-left: 65px;
         margin-top: 0;
     }
 
@@ -927,5 +927,4 @@ a {
     .footer .socialFooter {
         margin-left: 101px;
     }
-
 }
